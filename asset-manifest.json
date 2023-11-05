@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/voteformeow/static/css/main.ab6c6edd.css",
-    "main.js": "/voteformeow/static/js/main.75421385.js",
+    "main.js": "/voteformeow/static/js/main.ce053b64.js",
     "index.html": "/voteformeow/index.html",
     "main.ab6c6edd.css.map": "/voteformeow/static/css/main.ab6c6edd.css.map",
-    "main.75421385.js.map": "/voteformeow/static/js/main.75421385.js.map"
+    "main.ce053b64.js.map": "/voteformeow/static/js/main.ce053b64.js.map"
   },
   "entrypoints": [
     "static/css/main.ab6c6edd.css",
-    "static/js/main.75421385.js"
+    "static/js/main.ce053b64.js"
   ]
 }
