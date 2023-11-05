@@ -10,6 +10,7 @@ const Layout = () => {
           <li> LOGO</li>
         </ul>
         <ul>
+          <li>測試自動化部署</li>
           <li>候選人主張</li>
           <li>最新活動</li>
           <li>政策議題</li>
