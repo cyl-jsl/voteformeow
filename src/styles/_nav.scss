@@ -1,0 +1,33 @@
+.section-nav {
+  padding: 16px 24px;
+  position: sticky!important;
+  top: 0;
+  nav {
+    background: #fff;
+    padding: 12px 24px;
+    border-radius: 10px;
+    ul.nav-list-btns {
+      li {
+        margin-inline: $vfm-p-base;
+      }
+    }
+    ul.social-btns {
+      li {
+        margin-inline: $vfm-p-base;
+      }
+    }
+  }
+}
+
+.bottom-nav {
+    ul {
+      li {
+        padding-block-start: 12px;
+        padding-block-end: 16px;
+        h6 {
+          margin-block-start: 4px;
+          font-size: 12px;
+        }
+      }
+    }
+}

@@ -1,12 +1,161 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@font-face {
+  font-family: Manto;
+  src: url(../../public/fonts/MantouSans-Regular.ttf);
+}
+@font-face {
+  font-family: FigmaInter;
+  src: url(../../public/fonts/Inter-VariableFont_slnt_wght.ttf);
 }
 
-div{
-    background-color: red;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
+@import "./normalize.scss";
+@import "~bootstrap/scss/bootstrap";
+
+// spacer
+$vfm-p-base: 8px;
+$vfm-p-sm: 16px;
+$vfm-p-md: 24px;
+$vfm-p-lg: 32px;
+$vfm-s-sm: 48px;
+$vfm-s-md: 64px;
+$vfm-s-lg: 96px;
+$vfm-s-xl: 192px;
+
+// Color
+$vfm-theme: #da7d4a;
+$vfm-priText: #334155;
+$vfm-secText: #94a3b8;
+$vfm-bg1: #fdfcfb;
+$vfm-bg2: #f7ece1;
+
+* {
+  body {
+    background-color: grey;
+  }
+  font-family: FigmaInter;
+  font-weight: 400;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  ol,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 }
+
+.vfm-theme {
+  color: $vfm-theme;
+}
+.vfm-priText {
+  color: $vfm-priText;
+}
+.vfm-secText {
+  color: $vfm-secText;
+}
+.vfm-bg1 {
+  background-color: $vfm-bg1;
+}
+.vfm-bg2 {
+  background-color: $vfm-bg2;
+}
+.vfm-gradient {
+  //   background-color: #da7d4a;
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(229, 121, 59, 1) 0%,
+    rgba(255, 65, 133, 1) 50%
+  );
+}
+.vfm-titleColor {
+  font-family: Manto;
+  color: rgb(229, 121, 59);
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(229, 121, 59, 1) 0%,
+    rgba(255, 65, 133, 1) 25%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// Typography & RWD
+.vfm-titleFont {
+  font-size: 64px;
+  font-weight: 400;
+  @media screen and (max-width: 768px) {
+    font-size: 52px;
+  }
+}
+
+.vfm-fs1 {
+  font-size: 40px;
+  font-weight: 700;
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
+}
+.vfm-fs2 {
+  font-size: 32px;
+  font-weight: 700;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+.vfm-fs3 {
+  font-size: 28px;
+  font-weight: 700;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+.vfm-fs4 {
+  font-size: 24px;
+  font-weight: 700;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+.vfm-fs5 {
+  font-size: 20px;
+  font-weight: 700;
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+.vfm-fs6 {
+  font-size: 16px;
+  font-weight: 700;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+.vfm-base {
+  font-size: 18px;
+  font-weight: 400;
+  @media screen and (max-width: 1020px) {
+    font-size: 16px;
+  }
+}
+.vfm-body {
+  font-size: 16px;
+  font-weight: 400;
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+.vfm-small {
+  font-size: 14px;
+  font-weight: 400;
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+@import "./nav.scss";
+@import "./footer.scss";
