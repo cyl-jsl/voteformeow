@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/voteformeow/static/css/main.a8725136.css",
-    "main.js": "/voteformeow/static/js/main.c6e7b2d5.js",
+    "main.css": "/voteformeow/static/css/main.ea34e8d8.css",
+    "main.js": "/voteformeow/static/js/main.007fb811.js",
     "static/media/MantouSans-Regular.ttf": "/voteformeow/static/media/MantouSans-Regular.dbec1faa4eab2d4d8629.ttf",
     "static/media/Inter-VariableFont_slnt_wght.ttf": "/voteformeow/static/media/Inter-VariableFont_slnt_wght.853e01975d2783d9fa29.ttf",
+    "static/media/header.png": "/voteformeow/static/media/header.a77105ac6b14b5c0a3ef.png",
     "index.html": "/voteformeow/index.html",
-    "main.a8725136.css.map": "/voteformeow/static/css/main.a8725136.css.map",
-    "main.c6e7b2d5.js.map": "/voteformeow/static/js/main.c6e7b2d5.js.map"
+    "main.ea34e8d8.css.map": "/voteformeow/static/css/main.ea34e8d8.css.map",
+    "main.007fb811.js.map": "/voteformeow/static/js/main.007fb811.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8725136.css",
-    "static/js/main.c6e7b2d5.js"
+    "static/css/main.ea34e8d8.css",
+    "static/js/main.007fb811.js"
   ]
 }
