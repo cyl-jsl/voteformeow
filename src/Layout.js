@@ -1,14 +1,25 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import logo from "./icons/logo.png"
+import btnFb from "./icons/btnFb.png"
+import btnIg from "./icons/btnIg.png"
+import btnYt from "./icons/btnYt.png"
+import navBtn1 from "./icons/navBtn1.png"
+import navBtn2 from "./icons/navBtn2.png"
+import navBtn3 from "./icons/navBtn3.png"
+import navBtn4 from "./icons/navBtn4.png"
+import navBtn5 from "./icons/navBtn5.png"
 
 const Layout = () => {
   return (
     <>
       <div className="section-nav">
-        <nav className="container-fluid d-flex justify-content-between align-items-center">
+        <nav
+          className="container-fluid d-flex justify-content-between align-items-center"
+        >
           <ul className="logo">
             <li className="d-flex align-items-center">
-              <img src="icons/logo.png" alt="voteformiao-logo" />
+              <img src={logo} alt="voteformiao-logo" />
               <h3 className="vfm-theme vfm-fs4 ps-1">喵立翰 Miao Li-Han</h3>
             </li>
           </ul>
@@ -21,13 +32,13 @@ const Layout = () => {
           </ul>
           <ul className="social-btns d-flex">
             <li>
-              <img src="/icons/btnFb.png" alt="" />
+              <img src={btnFb} alt="" />
             </li>
             <li>
-              <img src="/icons/btnIg.png" alt="" />
+              <img src={btnIg} alt="" />
             </li>
             <li>
-              <img src="/icons/btnYt.png" alt="" />
+              <img src={btnYt} alt="" />
             </li>
           </ul>
         </nav>
@@ -44,17 +55,17 @@ const Layout = () => {
               <li className="d-flex">
                 <li>
                   <div className="bg-white rounded-circle">
-                    <img src="/icons/btnFb.png" alt="" />
+                    <img src={btnFb} alt="" />
                   </div>
                 </li>
                 <li>
                   <div className="bg-white rounded-circle">
-                    <img src="/icons/btnIg.png" alt="" />
+                    <img src={btnIg} alt="" />
                   </div>
                 </li>
                 <li>
                   <div className="bg-white rounded-circle">
-                    <img src="/icons/btnYt.png" alt="" />
+                    <img src={btnYt} alt="" />
                   </div>
                 </li>
               </li>
@@ -78,23 +89,23 @@ const Layout = () => {
       <nav className="d-md-none bg-white fixed-bottom bottom-nav">
         <ul className="row gx-0">
           <li className="col text-center">
-            <img src="/icons/navBtn1.png  " alt="" />
+            <img src={navBtn1} alt="" />
             <h6>候選人主張</h6>
           </li>
           <li className="col text-center">
-            <img src="/icons/navBtn2.png  " alt="" />
+            <img src={navBtn2} alt="" />
             <h6>最新活動</h6>
           </li>
           <li className="col text-center">
-            <img src="/icons/navBtn3.png  " alt="" />
+            <img src={navBtn3} alt="" />
             <h6>政策議題</h6>
           </li>
           <li className="col text-center">
-            <img src="/icons/navBtn4.png  " alt="" />
+            <img src={navBtn4} alt="" />
             <h6>小額捐款</h6>
           </li>
           <li className="col text-center">
-            <img src="/icons/navBtn5.png  " alt="" />
+            <img src={navBtn5} alt="" />
             <h6>服務信箱</h6>
           </li>
         </ul>
