@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout/>}>
+        <Route path="/voteformeow" element={<Layout/>}>
           <Route index element={<Homepage />}/>
           <Route path="*" element={<NotFound/>}/>
         </Route>

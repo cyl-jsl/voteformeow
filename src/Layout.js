@@ -5,13 +5,10 @@ const Layout = () => {
   return (
     <>
       <div className="section-nav">
-        <nav
-          className="container-fluid d-flex justify-content-between align-items-center"
-          id="nav"
-        >
+        <nav className="container-fluid d-flex justify-content-between align-items-center">
           <ul className="logo">
             <li className="d-flex align-items-center">
-              <img src="/icons/vfmLogo.png" alt="voteformiao-logo" />
+              <img src="icons/logo.png" alt="voteformiao-logo" />
               <h3 className="vfm-theme vfm-fs4 ps-1">喵立翰 Miao Li-Han</h3>
             </li>
           </ul>
@@ -36,7 +33,7 @@ const Layout = () => {
         </nav>
       </div>
       <Outlet />
-      <div className="section-footer">
+      <div className="section-footer mb-md-0 mb-5">
         <footer className="container d-md-flex justify-content-between align-items-center py-5">
           <div className="left">
             <ul>
@@ -67,7 +64,7 @@ const Layout = () => {
             </ul>
           </div>
           <div className="right">
-            <ul className="vfm-priText  ">
+            <ul className="vfm-priText">
               <li className="mb-3">
                 <h4 className="vfm-fs4">競選總部</h4>
               </li>
