@@ -23,6 +23,7 @@ $vfm-s-xl: 192px;
 // Color
 $vfm-theme: #da7d4a;
 $vfm-priText: #334155;
+$vfm-bgPriText: #334155;
 $vfm-secText: #94a3b8;
 $vfm-bg1: #fdfcfb;
 $vfm-bg2: #f7ece1;
@@ -65,8 +66,14 @@ $vfm-bg2: #f7ece1;
 .vfm-bg2 {
   background-color: $vfm-bg2;
 }
+.vfm-bgTheme{
+  background-color: $vfm-theme!important;
+}
+.vfm-bgPriText{
+  background-color: $vfm-bgPriText!important;
+}
 .vfm-gradient {
-  //   background-color: #da7d4a;
+    background-color: #da7d4a;
   background: -webkit-linear-gradient(
     0deg,
     rgba(229, 121, 59, 1) 0%,
@@ -74,12 +81,11 @@ $vfm-bg2: #f7ece1;
   );
 }
 .vfm-titleColor {
-  font-family: Manto;
   color: rgb(229, 121, 59);
   background: -webkit-linear-gradient(
     0deg,
-    rgba(229, 121, 59, 1) 0%,
-    rgba(255, 65, 133, 1) 25%
+    rgba(229, 121, 59, 1) 25%,
+    rgba(255, 65, 133, 1) 75%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -87,6 +93,7 @@ $vfm-bg2: #f7ece1;
 
 // Typography & RWD
 .vfm-titleFont {
+  font-family: Manto;
   font-size: 64px;
   font-weight: 400;
   @media screen and (max-width: 768px) {
@@ -157,5 +164,16 @@ $vfm-bg2: #f7ece1;
     font-size: 14px;
   }
 }
+
+//重複使用元素
+.vfm-number{ //選舉號碼球，配合rounded-circle使用
+  height: 32px;
+  width: 32px;
+  margin-inline-end: $vfm-p-base;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+}
 @import "./nav.scss";
 @import "./footer.scss";
+@import "./Banner.scss";

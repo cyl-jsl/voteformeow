@@ -49,7 +49,7 @@ const Layout = () => {
           <div className="left">
             <ul>
               <li className="d-flex">
-                <div className="vfm-gradient rounded-circle text-center">3</div>
+                <div className="vfm-gradient vfm-number rounded-circle text-center">3</div>
                 <h3 className="vfm-theme vfm-fs3 vfm-p">喵立翰 Miao Li-Han</h3>
               </li>
               <li className="d-flex">
