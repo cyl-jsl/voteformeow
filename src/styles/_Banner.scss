@@ -1,4 +1,25 @@
 .section-banner {
+  .title {
+    position: relative;
+    .container {
+      img {
+        width: 100%;
+        max-width: fit-content;
+        object-fit: contain;
+      }
+    }
+    .social-btns {
+      border-radius: 12px;
+      position: absolute;
+      top: 82%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 8px 40px;
+      li {
+        margin-inline: 16px;
+      }
+    }
+  }
   .vfm-bgPriText {
     border-radius: 16px;
     padding: 12px 16px;
@@ -11,13 +32,13 @@
     font-size: 32px;
     // font-weight: 900;
   }
-  .title-wrapper{
-    border: 1px solid #FFFFFF;
+  .title-wrapper {
+    border: 1px solid #ffffff;
     border-radius: 16px;
-    box-shadow: 0px 4px 12px 0px #A3B4CB33;
+    box-shadow: 0px 4px 12px 0px #a3b4cb33;
     padding: 12px 16px;
   }
-  .vfm-bgTheme{
+  .vfm-bgTheme {
     margin-block-start: -1px;
   }
 }

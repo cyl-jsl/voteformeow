@@ -20,7 +20,7 @@ const Layout = () => {
           <ul className="logo">
             <li className="d-flex align-items-center">
               <img src={logo} alt="voteformiao-logo" />
-              <h3 className="vfm-theme vfm-fs4 ps-1">喵立翰 Miao Li-Han</h3>
+              <h3 className="vfm-theme vfm-fs4 ps-2 ps-sm-1">喵立翰 Miao Li-Han</h3>
             </li>
           </ul>
           <ul className="nav-list-btns d-md-flex vfm-base vfm-priText d-none">
@@ -30,7 +30,7 @@ const Layout = () => {
             <li>小額捐款</li>
             <li>民眾服務信箱</li>
           </ul>
-          <ul className="social-btns d-flex">
+          <ul className="social-btns d-sm-flex d-none">
             <li>
               <img src={btnFb} alt="" />
             </li>

@@ -30,7 +30,7 @@ $vfm-bg2: #f7ece1;
 
 * {
   body {
-    background-color: grey;
+    background-color: $vfm-bg1;
   }
   font-family: FigmaInter;
   font-weight: 400;
@@ -107,6 +107,10 @@ $vfm-bg2: #f7ece1;
   @media screen and (max-width: 768px) {
     font-size: 32px;
   }
+  @media screen and (max-width: 393px) {
+    font-size: 24px;
+    
+  }
 }
 .vfm-fs2 {
   font-size: 32px;
@@ -120,6 +124,9 @@ $vfm-bg2: #f7ece1;
   font-weight: 700;
   @media screen and (max-width: 768px) {
     font-size: 24px;
+  }
+  @media screen and (max-width: 393px) {
+    font-size: 20px;
   }
 }
 .vfm-fs4 {
@@ -174,6 +181,15 @@ $vfm-bg2: #f7ece1;
   font-size: 20px;
   font-weight: 900;
 }
+.vfm-tag{
+  
+  color: #fff;
+  background-color: $vfm-bgPriText;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 0 auto;
+}
 @import "./nav.scss";
 @import "./footer.scss";
 @import "./Banner.scss";
+@import "./advocate.scss";
