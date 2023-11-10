@@ -12791,7 +12791,11 @@ textarea.form-control-lg {
   min-width: 792px;
   margin-inline: -24px;
   border-radius: 32px;
-  transition: all 0.2s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .carousel-card {
+    min-width: 331px;
+  }
 }
 .carousel-card .cc-left {
   margin: 32px 0 32px 32px;
@@ -12813,17 +12817,20 @@ textarea.form-control-lg {
 }
 
 .carousel .left {
-  transform: scale(0.83);
   order: 1;
 }
 .carousel .active {
-  transform: scale(1);
-  transform: translateX(0%);
   order: 2;
 }
 .carousel .right {
-  transform: scale(0.83);
   order: 3;
+}
+.carousel .item {
+  transform: scale3d(0.83, 0.83, 1);
+  transition: all 0.3s ease-in-out;
+}
+.carousel .owl-item.active.center .item {
+  transform: scale3d(1, 1, 1);
 }
 
 .morePill {
@@ -12833,4 +12840,50 @@ textarea.form-control-lg {
   background-color: #94a3b8;
   border-radius: 500px;
   padding: 16px 24px;
+}
+
+.owl-carousel .owl-dots {
+  display: inline-block !important;
+  width: 180px;
+  align-self: center;
+  text-align: center;
+  margin-block-start: -55px !important;
+}
+.owl-carousel .owl-dots .owl-dot {
+  display: inline-block !important;
+}
+.owl-carousel .owl-dots .owl-dot span {
+  background-color: #da7d4a;
+  padding: 0;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-inline: 16px;
+  transform: translate3d(0px, -50%, 0px) scale(1);
+  transform-origin: 50% 50% 0;
+  transition: all 250ms ease-out 0s;
+  opacity: 0.4;
+}
+.owl-carousel .owl-dots .owl-dot.active span {
+  background-color: #da7d4a;
+  transform: translate3d(0px, -50%, 0px) scale(1);
+  opacity: 1;
+}
+.owl-carousel .owl-dots .owl-dot:hover span {
+  background-color: #da7d4a;
+  transform: translate3d(0px, -50%, 0px) scale(1);
+}
+
+.owl-nav {
+  display: block !important;
+}
+.owl-nav button {
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+  background-color: white !important;
+  color: #da7d4a !important;
+  margin-block: 30px !important;
+  margin-inline: 90px !important;
+  top: 15px;
 }/*# sourceMappingURL=style.css.map */

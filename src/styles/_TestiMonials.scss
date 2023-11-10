@@ -1,0 +1,90 @@
+// #customer-testimonoals .item {
+//   max-width: 656.73px;
+//   transform: scale3d(0.83, 0.83, 1);
+//   transition: all 0.3s ease-in-out;
+// }
+// #customer-testimonoals .owl-item.active.center .item {
+//   min-width: 792px;
+//   transform: scale3d(1, 1, 1);
+// }
+
+// 分頁符號及按鈕樣式
+.owl-carousel {
+  .owl-dots {
+    display: inline-block !important;
+    width: 180px;
+    align-self: center;
+    text-align: center;
+    margin-block-start: -55px !important;
+    .owl-dot {
+      display: inline-block !important;
+      span {
+        background-color: $vfm-theme;
+        padding: 0;
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        margin-inline: 16px;
+        transform: translate3d(0px, -50%, 0px) scale(1);
+        transform-origin: 50% 50% 0;
+        transition: all 250ms ease-out 0s;
+        opacity: 0.4;
+      }
+    }
+    .owl-dot.active {
+      span {
+        background-color: $vfm-theme;
+        transform: translate3d(0px, -50%, 0px) scale(1);
+        opacity: 1;
+      }
+    }
+    .owl-dot:hover {
+      span {
+        background-color: $vfm-theme;
+        transform: translate3d(0px, -50%, 0px) scale(1);
+      }
+    }
+  }
+}
+// .owl-theme .owl-dots .owl-dot.active span,
+// .owl-theme .owl-dots .owl-dot:hover span {
+//   background: #56423d;
+//   transform: translate3d(0px, -50%, 0px) scale(0.83);
+// }
+// .owl-carousel .owl-dots {
+//   display: inline-block!important;
+//   width: 100%;
+//   text-align: center;
+// }
+// .owl-carousel .owl-dots .owl-dot {
+//   display: inline-block !important;
+// }
+// .owl-carousel .owl-dots .owl-dot span {
+//   /* background: #eaa400; */
+//   background: #56423d;
+//   display: inline-block;
+//   height: 20px;
+//   width: 20px;
+//   margin: 0 2px 5px;
+//   transform: translate3d(0px, -50%, 0px) scale(0.3);
+//   transform-origin: 50% 50% 0;
+//   transition: all 250ms ease-out 0s;
+// }
+
+.owl-nav {
+  display: block !important;
+  button {
+    height: 40px !important;
+    width: 40px !important;
+    border-radius: 50% !important;
+    background-color: white !important;
+    color: $vfm-theme !important;
+    margin-block: 30px!important;
+    margin-inline: 90px!important;
+    top: 15px;
+  }
+  // .owl-prev {
+  // }
+  // .owl-next {
+  // }
+}

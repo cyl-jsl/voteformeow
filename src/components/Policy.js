@@ -1,20 +1,38 @@
 import React from "react";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 import CarouselCard from "./CarouselCard";
 import policy1 from "../images/policy1.png";
 import policy2 from "../images/policy2.png";
 import policy3 from "../images/policy3.png";
-
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import ArrowBack from "@mui/icons-material/ArrowBack";
+// import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+// import ArrowBack from "@mui/icons-material/ArrowBack";
 
 const Policy = () => {
-
-  
-  const handleLeft = () => {
-    console.log("left");
-  };
-  const handleRight = () => {
-    console.log("right");
+  const options = {
+    loop: true,
+    // autoplay: true,
+    // autoplayTimeout: 8500,
+    center: true,
+    items: 3,
+    nav: true,
+    dots: true,
+    smartSpeed: 450,
+    autoWidth: true,
+    navText:["<i class='fa-solid fa-arrow-left'></i>","<i class='fa-solid fa-arrow-right'></i>"]
+    // margin: 64,
+    // responsive: {
+    //   0: {
+    //     items: 3,
+    //   },
+    //   600: {
+    //     items: 3,
+    //   },
+    //   1000: {
+    //     items: 3,
+    //   },
+    // },
   };
   return (
     <div className="section-policy vfm-bg2">
@@ -22,42 +40,47 @@ const Policy = () => {
         <div className="vfm-tag vfm-fs6 mb-sm-3">POLICY ISSUES</div>
         <h3 className="vfm-titleFont vfm-titleColor my-sm-3">政策議題</h3>
       </div>
-      <div className="carousel container-fluid d-flex justify-content-center">
+      <OwlCarousel
+        id="customer-testimonoals "
+        className="carousel owl-carousel owl-theme d-flex flex-column justify-content-center"
+        {...options}
+      >
         <CarouselCard
-          className="active"
+          className="item"
           tagBg="#F7ECE1"
           cardImg={policy1}
           cardTitle="喵的保障"
           cardDescription="為毛孩子謀福利！<br/>推動寵物醫療保障方案"
         />
         <CarouselCard
-          className="right"
+          className="item"
           tagBg="#BEEADB"
           cardImg={policy2}
           cardTitle="喵的福利"
           cardDescription="打造休閒天堂！<br/>推廣寵物休閒與娛樂場所"
         />
         <CarouselCard
-          className="left"
+          className="item"
           tagBg="#FFDDDD"
           cardImg={policy3}
           cardTitle="喵的教育"
           cardDescription="推廣寵物飼養教育，<br/>讓愛更加專業"
         />
-      </div>
-      <div className="controlBtns d-flex justify-content-center mt-5">
-        <div className="controlBtn" onClick={handleLeft}>
+        
+      </OwlCarousel>
+      {/* <div className="controlBtns d-flex justify-content-center mt-5">
+        <div className="controlBtn owl-prev" >
           <ArrowBack fontSize="medium" />
         </div>
-        <div className="pagination d-flex align-items-center">
-          <div className="dot active"></div>
-          <div className="dot right"></div>
-          <div className="dot left"></div>
+        <div className="pagination d-flex align-items-center owl-dots">
+          <div className="dot active owl-dot"></div>
+          <div className="dot right owl-dot"></div>
+          <div className="dot left owl-dot"></div>
         </div>
-        <div className="controlBtn" onClick={handleRight}>
+        <div className="controlBtn owl-next" >
           <ArrowForwardIcon fontSize="medium" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -3,8 +3,8 @@
   .carousel {
     overflow: hidden;
   }
-  .controlBtns{
-    .controlBtn{
+  .controlBtns {
+    .controlBtn {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -14,8 +14,8 @@
       background-color: white;
       color: $vfm-theme;
     }
-    .pagination{
-      .dot{
+    .pagination {
+      .dot {
         height: 12px;
         width: 12px;
         border-radius: 50%;
@@ -23,13 +23,13 @@
         margin-inline: 16px;
         padding: 0;
       }
-      .left{
+      .left {
         opacity: 0.4;
       }
-      .active{
+      .active {
         opacity: 1;
       }
-      .right{
+      .right {
         opacity: 0.4;
       }
     }
@@ -43,7 +43,10 @@
   margin-inline: -24px;
   border-radius: 32px;
   // overflow: hidden;
-  transition: all 0.2s ease-in-out;
+  // transition: all 0.2s ease-in-out;
+  @media screen and (max-width: 768px) {
+    min-width: 331px;    
+  }
   .cc-left {
     margin: 32px 0 32px 32px;
     img {
@@ -57,30 +60,33 @@
       padding: 4px 12px;
       margin-block-start: 24px;
     }
-    .cc-des{
+    .cc-des {
       margin-block-start: 16px;
       margin-block-end: 40px;
     }
   }
 }
 //管理縮放動畫
-.carousel{
-  .left{
-    transform: scale(.83);
+.carousel {
+  .left {
     order: 1;
   }
-  .active{
-    transform: scale(1);
-    transform: translateX(0%);
+  .active {
     order: 2;
-
   }
-  .right{
-    transform: scale(.83);
+  .right {
     order: 3;
   }
+  .item {
+    transform: scale3d(0.83, 0.83, 1);
+    transition: all 0.3s ease-in-out;
+  }
+  .owl-item.active.center {
+    .item {
+      transform: scale3d(1, 1, 1);
+    }
+  }
 }
-
 
 .morePill {
   color: $vfm-priText;

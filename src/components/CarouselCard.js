@@ -4,7 +4,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const CarouselCard = (props) => {
   const { cardImg, cardTitle, cardDescription, tagBg, className } = props;
   return (
-    <div className={`carousel-card bg-white d-flex justify-content-evenly align-items-center ${className}`}>
+    <div className={`carousel-card bg-white d-md-flex justify-content-evenly align-items-center ${className}`}>
       <div className="cc-left">
         <img src={cardImg} alt="" />
       </div>
