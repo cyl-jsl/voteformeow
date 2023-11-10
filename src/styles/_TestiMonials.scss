@@ -16,6 +16,9 @@
     align-self: center;
     text-align: center;
     margin-block-start: -55px !important;
+    @media screen and (max-width: 576px) {
+      z-index: 2;
+    }
     .owl-dot {
       display: inline-block !important;
       span {
@@ -43,6 +46,11 @@
         background-color: $vfm-theme;
         transform: translate3d(0px, -50%, 0px) scale(1);
       }
+    }
+  }
+  .owl-stage-outer{
+    @media screen and (max-width: 576px) {
+      margin-block-end: -100px;
     }
   }
 }
@@ -73,6 +81,9 @@
 
 .owl-nav {
   display: block !important;
+  @media screen and (max-width: 576px) {
+    z-index: 1;
+  }
   button {
     height: 40px !important;
     width: 40px !important;
@@ -80,11 +91,12 @@
     background-color: white !important;
     color: $vfm-theme !important;
     margin-block: 30px!important;
-    margin-inline: 90px!important;
     top: 15px;
   }
-  // .owl-prev {
-  // }
-  // .owl-next {
-  // }
+  .owl-prev {
+    margin-inline-end: 90px!important;
+  }
+  .owl-next {
+    margin-inline-start: 90px!important;
+  }
 }

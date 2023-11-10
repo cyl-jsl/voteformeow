@@ -20,8 +20,8 @@ const Policy = () => {
     dots: true,
     smartSpeed: 450,
     autoWidth: true,
-    navText:["<i class='fa-solid fa-arrow-left'></i>","<i class='fa-solid fa-arrow-right'></i>"]
-    // margin: 64,
+    navText:["<i class='fa-solid fa-arrow-left'></i>","<i class='fa-solid fa-arrow-right'></i>"],
+    // margin: 12,
     // responsive: {
     //   0: {
     //     items: 3,
@@ -38,7 +38,7 @@ const Policy = () => {
     <div className="section-policy vfm-bg2">
       <div className="d-flex flex-column align-items-center">
         <div className="vfm-tag vfm-fs6 mb-sm-3">POLICY ISSUES</div>
-        <h3 className="vfm-titleFont vfm-titleColor my-sm-3">政策議題</h3>
+        <h3 className="vfm-titleFont vfm-titleColor mb-sm-5 pb-sm-5">政策議題</h3>
       </div>
       <OwlCarousel
         id="customer-testimonoals "

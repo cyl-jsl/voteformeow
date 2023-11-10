@@ -12792,7 +12792,7 @@ textarea.form-control-lg {
   margin-inline: -24px;
   border-radius: 32px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .carousel-card {
     min-width: 331px;
   }
@@ -12800,11 +12800,21 @@ textarea.form-control-lg {
 .carousel-card .cc-left {
   margin: 32px 0 32px 32px;
 }
+@media screen and (max-width: 576px) {
+  .carousel-card .cc-left {
+    margin: 16px 16px 0 16px;
+  }
+}
 .carousel-card .cc-left img {
   border-radius: 24px;
 }
 .carousel-card .cc-right {
   margin: 32px 32px 0 32px;
+}
+@media screen and (max-width: 576px) {
+  .carousel-card .cc-right {
+    margin: 16px 16px 0 16px;
+  }
 }
 .carousel-card .cc-right .cc-tag {
   border-radius: 500px;
@@ -12829,8 +12839,24 @@ textarea.form-control-lg {
   transform: scale3d(0.83, 0.83, 1);
   transition: all 0.3s ease-in-out;
 }
+@media screen and (max-width: 576px) {
+  .carousel .item {
+    transform: scale3d(0.65, 0.65, 1);
+    margin-inline: -50px !important;
+  }
+}
+@media screen and (max-width: 393px) {
+  .carousel .item {
+    margin-inline: -65px !important;
+  }
+}
 .carousel .owl-item.active.center .item {
   transform: scale3d(1, 1, 1);
+}
+@media screen and (max-width: 576px) {
+  .carousel .owl-item.active.center .item {
+    transform: scale3d(0.7, 0.7, 1);
+  }
 }
 
 .morePill {
@@ -12848,6 +12874,11 @@ textarea.form-control-lg {
   align-self: center;
   text-align: center;
   margin-block-start: -55px !important;
+}
+@media screen and (max-width: 576px) {
+  .owl-carousel .owl-dots {
+    z-index: 2;
+  }
 }
 .owl-carousel .owl-dots .owl-dot {
   display: inline-block !important;
@@ -12873,9 +12904,19 @@ textarea.form-control-lg {
   background-color: #da7d4a;
   transform: translate3d(0px, -50%, 0px) scale(1);
 }
+@media screen and (max-width: 576px) {
+  .owl-carousel .owl-stage-outer {
+    margin-block-end: -100px;
+  }
+}
 
 .owl-nav {
   display: block !important;
+}
+@media screen and (max-width: 576px) {
+  .owl-nav {
+    z-index: 1;
+  }
 }
 .owl-nav button {
   height: 40px !important;
@@ -12884,6 +12925,11 @@ textarea.form-control-lg {
   background-color: white !important;
   color: #da7d4a !important;
   margin-block: 30px !important;
-  margin-inline: 90px !important;
   top: 15px;
+}
+.owl-nav .owl-prev {
+  margin-inline-end: 90px !important;
+}
+.owl-nav .owl-next {
+  margin-inline-start: 90px !important;
 }/*# sourceMappingURL=style.css.map */
