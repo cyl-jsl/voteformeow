@@ -12751,4 +12751,86 @@ textarea.form-control-lg {
   background-color: #94a3b8;
   border-radius: 500px;
   padding: 16px 24px;
+}
+
+.section-policy {
+  padding-block: 64px;
+}
+.section-policy .carousel {
+  overflow: hidden;
+}
+.section-policy .controlBtns .controlBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: white;
+  color: #da7d4a;
+}
+.section-policy .controlBtns .pagination .dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #da7d4a;
+  margin-inline: 16px;
+  padding: 0;
+}
+.section-policy .controlBtns .pagination .left {
+  opacity: 0.4;
+}
+.section-policy .controlBtns .pagination .active {
+  opacity: 1;
+}
+.section-policy .controlBtns .pagination .right {
+  opacity: 0.4;
+}
+
+.carousel-card {
+  min-width: 792px;
+  margin-inline: -24px;
+  border-radius: 32px;
+  transition: all 0.2s ease-in-out;
+}
+.carousel-card .cc-left {
+  margin: 32px 0 32px 32px;
+}
+.carousel-card .cc-left img {
+  border-radius: 24px;
+}
+.carousel-card .cc-right {
+  margin: 32px 32px 0 32px;
+}
+.carousel-card .cc-right .cc-tag {
+  border-radius: 500px;
+  padding: 4px 12px;
+  margin-block-start: 24px;
+}
+.carousel-card .cc-right .cc-des {
+  margin-block-start: 16px;
+  margin-block-end: 40px;
+}
+
+.carousel .left {
+  transform: scale(0.83);
+  order: 1;
+}
+.carousel .active {
+  transform: scale(1);
+  transform: translateX(0%);
+  order: 2;
+}
+.carousel .right {
+  transform: scale(0.83);
+  order: 3;
+}
+
+.morePill {
+  color: #334155;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #94a3b8;
+  border-radius: 500px;
+  padding: 16px 24px;
 }/*# sourceMappingURL=style.css.map */
