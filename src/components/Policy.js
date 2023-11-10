@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import CarouselCard from "./CarouselCard";
 import policy1 from "../images/policy1.png";
 import policy2 from "../images/policy2.png";
