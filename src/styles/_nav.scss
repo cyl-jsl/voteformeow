@@ -1,11 +1,14 @@
 .section-nav {
   padding: 16px 24px;
-  position: sticky!important;
+  position: sticky !important;
   top: 0;
   opacity: 0.9;
   z-index: 999;
+  @media screen and (max-width: 576px) {
+    position: static !important;
+  }
   @media screen and (max-width: 393px) {
-    padding: 0px
+    padding: 0px;
   }
   nav {
     background: #fff;
@@ -30,14 +33,14 @@
 }
 
 .bottom-nav {
-    ul {
-      li {
-        padding-block-start: 12px;
-        padding-block-end: 16px;
-        h6 {
-          margin-block-start: 4px;
-          font-size: 12px;
-        }
+  ul {
+    li {
+      padding-block-start: 12px;
+      padding-block-end: 16px;
+      h6 {
+        margin-block-start: 4px;
+        font-size: 12px;
       }
     }
+  }
 }

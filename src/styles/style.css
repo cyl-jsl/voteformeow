@@ -12502,6 +12502,11 @@ textarea.form-control-lg {
   opacity: 0.9;
   z-index: 999;
 }
+@media screen and (max-width: 576px) {
+  .section-nav {
+    position: static !important;
+  }
+}
 @media screen and (max-width: 393px) {
   .section-nav {
     padding: 0px;
@@ -12866,6 +12871,88 @@ textarea.form-control-lg {
   background-color: #94a3b8;
   border-radius: 500px;
   padding: 16px 24px;
+}
+
+.section-donation {
+  margin-block: 104px;
+}
+@media screen and (max-width: 1200px) {
+  .section-donation .vfm-titleFont {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .section-donation .vfm-titleFont {
+    font-size: 36px;
+  }
+}
+.section-donation .left {
+  border-radius: 32px;
+  padding: 96px;
+}
+@media screen and (max-width: 1400px) {
+  .section-donation .left {
+    padding: 48px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .section-donation .left {
+    padding: 24px;
+  }
+}
+.section-donation .left .up {
+  color: #fff;
+}
+@media screen and (max-width: 992px) {
+  .section-donation .left .down .imgWrapper {
+    width: 128px;
+  }
+}
+.section-donation .left .down .imgWrapper img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-donation .right {
+  border-radius: 32px;
+  padding: 96px;
+}
+@media screen and (max-width: 1400px) {
+  .section-donation .right {
+    padding: 48px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .section-donation .right {
+    padding: 24px;
+  }
+}
+.section-donation .right .up {
+  color: #fff;
+}
+@media screen and (max-width: 992px) {
+  .section-donation .right .down .imgWrapper {
+    width: 128px;
+  }
+}
+.section-donation .right .down .imgWrapper img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-donation .morePill {
+  margin-right: 60px;
+}
+@media screen and (max-width: 1400px) {
+  .section-donation .morePill {
+    margin-right: 36px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .section-donation .morePill {
+    padding: 8px 12px;
+    margin-right: 0px;
+  }
 }
 
 .owl-carousel .owl-dots {

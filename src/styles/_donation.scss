@@ -1,0 +1,70 @@
+.section-donation {
+  margin-block: 104px;
+  .vfm-titleFont{
+    @media screen and (max-width: 1200px){
+    font-size: 48px;
+    }
+    @media screen and (max-width: 992px){
+    font-size: 36px;
+    }
+    
+  }
+  .left {
+    border-radius: 32px;
+    padding: 96px;
+    @media screen and (max-width: 1400px) {
+      padding: 48px;
+    }
+    @media screen and (max-width: 992px){
+      padding: 24px;
+    }
+    .up {
+      color: #fff;
+    }
+    .down {
+        .imgWrapper{
+          @media screen and (max-width:992px){
+            width: 128px;
+          }
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+  }
+  .right {
+    border-radius: 32px;
+    padding: 96px;
+    @media screen and (max-width: 1400px) {
+      padding: 48px;
+    }
+    @media screen and (max-width: 992px){
+      padding: 24px;
+    }
+    .up {
+      color: #fff;
+    }
+    .down {
+        .imgWrapper{
+          @media screen and (max-width:992px){
+            width: 128px;
+          }
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+  }
+  .morePill {
+    margin-right: 60px;
+    @media screen and (max-width: 1400px) {
+      margin-right: 36px;
+    }
+    @media screen and (max-width: 992px){
+      padding: 8px 12px;
+      margin-right: 0px;
+    }
+  }
+}
